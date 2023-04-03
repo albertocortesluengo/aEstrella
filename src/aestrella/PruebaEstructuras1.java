@@ -27,7 +27,7 @@ public class PruebaEstructuras1 {
 		
 		// prueba pila
 		
-		System.out.println("------------------ Pila ACL -------------------");
+		System.out.println("------------------ Pila -------------------");
 		
 		pilaEnteros.push(2);
 		pilaEnteros.push(4);

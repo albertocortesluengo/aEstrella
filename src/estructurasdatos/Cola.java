@@ -23,13 +23,13 @@ public class Cola {
 	  }
 
 	  public void put(Object o) {
-		  Nodo new_node = new Nodo(o);
+		  Nodo nuevoNodo = new Nodo(o);
 		  if (nodoPrimero == null) {
-			  nodoPrimero = new_node;
-			  nodoFin = new_node;
+			  nodoPrimero = nuevoNodo;
+			  nodoFin = nuevoNodo;
 		  } else {
-			  nodoFin.siguienteNodo = new_node;
-			  nodoFin = new_node;
+			  nodoFin.siguienteNodo = nuevoNodo;
+			  nodoFin = nuevoNodo;
 		  }
 		  size++;
 	  }

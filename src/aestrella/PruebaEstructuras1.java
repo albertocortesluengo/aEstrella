@@ -1,5 +1,8 @@
 package aestrella;
 
+import java.util.Queue;
+import java.util.Stack;
+
 import estructurasdatos.Cola;
 import estructurasdatos.Pila;
 
@@ -7,6 +10,8 @@ public class PruebaEstructuras1 {
 
 	Pila pilaEnteros;
 	Cola colaEnteros;
+	Stack pilaEnterosNativa;
+	Queue colaEnterosNativa;
 	
 	public static void main(String[] args) {
 		new PruebaEstructuras1();
@@ -22,7 +27,7 @@ public class PruebaEstructuras1 {
 		
 		// prueba pila
 		
-		System.out.println("------------------ Pila -------------------");
+		System.out.println("------------------ Pila ACL -------------------");
 		
 		pilaEnteros.push(2);
 		pilaEnteros.push(4);
@@ -47,9 +52,46 @@ public class PruebaEstructuras1 {
 		System.out.println("Tamaño--> "+pilaEnteros.size());
 		
 
-		// prueba pila
+		// prueba cola
 		
-		System.out.println("\n------------------ Cola -------------------");
+		System.out.println("\n------------------ Cola ACL -------------------");
+		
+		colaEnteros.put("2");
+		colaEnteros.put("4");
+		colaEnteros.put("5");
+		colaEnteros.put("8");
+		colaEnteros.put("10");
+		colaEnteros.put("12");
+		
+		System.out.println("Tamaño--> "+colaEnteros.size());
+		System.out.println("sacar--> "+colaEnteros.get());
+		System.out.println("Tamaño--> "+colaEnteros.size());
+		System.out.println("sacar--> "+colaEnteros.get());
+		System.out.println("Tamaño--> "+colaEnteros.size());
+		
+		System.out.println("vacia? --> "+colaEnteros.vacia());
+		
+		System.out.println("primero--> "+colaEnteros.primero());
+		System.out.println("Tamaño--> "+colaEnteros.size());
+		
+		System.out.println("sacar--> "+colaEnteros.get());
+		System.out.println("Tamaño--> "+colaEnteros.size());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 	

@@ -54,7 +54,7 @@ public class PruebaEstructuras1 {
 
 		// prueba cola
 		
-		System.out.println("\n------------------ Cola ACL -------------------");
+		System.out.println("\n------------------ Cola -------------------");
 		
 		colaEnteros.put("2");
 		colaEnteros.put("4");
